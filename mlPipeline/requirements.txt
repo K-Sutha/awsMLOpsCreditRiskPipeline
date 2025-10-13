@@ -1,0 +1,36 @@
+# ML Pipeline Dependencies
+# Core ML Libraries
+scikit-learn
+xgboost
+tensorflow
+keras
+pandas
+numpy
+
+# SageMaker
+sagemaker
+boto3
+botocore
+
+# Data Processing
+scipy
+matplotlib
+seaborn
+
+# Model Persistence
+joblib
+pickle
+
+# Utilities
+python-dotenv
+pydantic
+structlog
+
+# Testing
+pytest
+pytest-cov
+
+# Development
+black
+flake8
+mypy

@@ -1,0 +1,29 @@
+# Core Dependencies
+pandas
+numpy
+scikit-learn
+xgboost
+tensorflow
+keras
+
+# AWS SDK
+boto3
+botocore
+
+# Database
+psycopg2-binary
+psycopg2-extras
+
+# Data Processing
+pyarrow
+s3fs
+
+# Utilities
+python-dotenv
+pydantic
+structlog
+
+# Testing
+pytest
+pytest-cov
+moto

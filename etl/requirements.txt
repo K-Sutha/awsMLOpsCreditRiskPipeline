@@ -1,0 +1,33 @@
+# ETL Pipeline Dependencies
+# AWS SDK
+boto3
+botocore
+
+# Spark and Glue
+pyspark
+awsglue
+
+# Data Processing
+pandas
+numpy
+
+# Machine Learning
+scikit-learn
+imbalanced-learn
+
+# Utilities
+python-dotenv
+pydantic
+
+# Logging
+structlog
+
+# Testing
+pytest
+pytest-cov
+moto
+
+# Development
+black
+flake8
+mypy

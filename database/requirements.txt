@@ -1,0 +1,24 @@
+# Database Dependencies
+# PostgreSQL
+psycopg2-binary
+psycopg2-extras
+
+# AWS SDK
+boto3
+botocore
+
+# Data Processing
+pandas
+numpy
+
+# Utilities
+python-dotenv
+pydantic
+
+# Logging
+structlog
+
+# Testing
+pytest
+pytest-cov
+moto
