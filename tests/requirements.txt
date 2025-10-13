@@ -1,0 +1,7 @@
+# Test Dependencies
+pytest
+pytest-cov
+boto3
+botocore
+numpy
+pandas

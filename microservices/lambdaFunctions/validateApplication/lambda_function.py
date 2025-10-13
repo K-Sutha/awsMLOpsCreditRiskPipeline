@@ -61,7 +61,7 @@ def validateApplication(event: Dict[str, Any], context) -> Dict[str, Any]:
         application_data['application_id'] = generate_application_id()
         
         # Send to EventBridge for risk scoring
-        await send_to_eventbridge('application.validated', application_data)
+        send_to_eventbridge('application.validated', application_data)
         
         logger.info(f"Application {application_data['application_id']} validated successfully")
         
@@ -187,7 +187,7 @@ def generate_application_id() -> str:
     import uuid
     return f"APP-{uuid.uuid4().hex[:8].upper()}"
 
-async def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
+def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
     """Send event to EventBridge for processing."""
     try:
         response = eventbridge.put_events(

@@ -259,7 +259,7 @@ def get_portfolio_trends() -> Dict[str, Any]:
         logger.error(f"Failed to get portfolio trends: {str(e)}")
         return {}
 
-async def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
+def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
     """Send event to EventBridge for processing."""
     try:
         response = eventbridge.put_events(

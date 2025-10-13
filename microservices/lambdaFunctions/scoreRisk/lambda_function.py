@@ -46,7 +46,7 @@ def scoreRisk(event: Dict[str, Any], context) -> Dict[str, Any]:
         application_data['risk_status'] = 'scored'
         
         # Send to EventBridge for decision making
-        await send_to_eventbridge('risk.scored', application_data)
+        send_to_eventbridge('risk.scored', application_data)
         
         logger.info(f"Risk score calculated for application {application_data['application_id']}: {risk_score}")
         
@@ -227,7 +227,7 @@ def fallback_risk_scoring(features: Dict[str, Any]) -> float:
         logger.error(f"Error in fallback scoring: {str(e)}")
         return 0.5  # Default moderate risk
 
-async def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
+def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
     """Send event to EventBridge for processing."""
     try:
         response = eventbridge.put_events(

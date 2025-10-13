@@ -67,7 +67,7 @@ def processApplication(event: Dict[str, Any], context) -> Dict[str, Any]:
         application_data['final_status'] = final_status
         
         # Send to EventBridge for portfolio update
-        await send_to_eventbridge('application.processed', application_data)
+        send_to_eventbridge('application.processed', application_data)
         
         logger.info(f"Application {application_id} processed successfully with status: {final_status}")
         
@@ -255,7 +255,7 @@ def generate_processing_summary(application_data: Dict[str, Any]) -> str:
     
     return f"Application {app_id}: Decision={decision}, Risk={risk_score:.3f}, Status={final_status}"
 
-async def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
+def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
     """Send event to EventBridge for processing."""
     try:
         response = eventbridge.put_events(

@@ -48,7 +48,7 @@ def makeDecision(event: Dict[str, Any], context) -> Dict[str, Any]:
         application_data['risk_level'] = decision_result['risk_level']
         
         # Send to EventBridge for processing
-        await send_to_eventbridge('decision.made', application_data)
+        send_to_eventbridge('decision.made', application_data)
         
         logger.info(f"Decision made for application {application_data['application_id']}: {decision_result['decision']}")
         
@@ -205,7 +205,7 @@ def get_decision_summary(decision: str, risk_score: float, application_data: Dic
     else:  # AUTO_REJECT
         return f"{applicant_name} - REJECTED: High risk ({risk_score:.3f}), Income: ${income:,.0f}, Loan: ${loan_amount:,.0f}"
 
-async def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
+def send_to_eventbridge(event_type: str, data: Dict[str, Any]) -> None:
     """Send event to EventBridge for processing."""
     try:
         response = eventbridge.put_events(
