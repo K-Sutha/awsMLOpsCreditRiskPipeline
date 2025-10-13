@@ -1,0 +1,5 @@
+# Microservices Dependencies
+boto3
+botocore
+numpy
+pandas

@@ -1,0 +1,5 @@
+# Lambda function dependencies
+boto3
+botocore
+numpy
+pandas
